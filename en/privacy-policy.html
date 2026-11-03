@@ -16,7 +16,7 @@
 <body>
 <p class="lang-switch"><a href="../privacy-policy.html">日本語</a> | English</p>
 <h1>Privacy Policy (Ramen Bookmarker)</h1>
-<p class="updated">Last updated: September 27, 2026</p>
+<p class="updated">Last updated: November 3, 2026</p>
 
 <p>
 "Ramen Bookmarker" (the "App") is an iOS app provided by an independent developer (the "Developer") that lets you search for ramen shops by your location, a shop name, or a place, and keep bookmarks, visit logs, and photos of shops. This policy explains how the App handles information.
@@ -31,18 +31,19 @@
 <h2>2. Use of location</h2>
 <ul>
   <li>The App reads your device's location only when you search by "Nearby".</li>
-  <li>That location (and the area name derived from it) is sent to the external service described below (Google's Gemini API) to search for nearby ramen shops.</li>
+  <li>That location (and the area name derived from it) is sent to the external services described below (by default Apple's Apple Maps; and Google's Gemini API as well if you add a Gemini API key) to search for nearby ramen shops.</li>
   <li>The App never stores your location.</li>
 </ul>
 
-<h2>3. Data sent to an external service (Gemini API)</h2>
+<h2>3. Data sent to external services (Apple Maps and Gemini API)</h2>
 <ul>
-  <li>The App uses Google's Gemini API (its feature that references Google Maps data) to search for shops and load shop details. When searching, the shop name or place you enter, or the location described in section 2, is sent.</li>
-  <li>Requests are sent directly from your device to Google using the API key you obtained and entered yourself. They never pass through the Developer.</li>
-  <li>Google's privacy policy and terms apply to the data sent.<br>
+  <li>By default, the App uses Apple's Apple Maps (MapKit) to search for shops. When searching, the shop name or place you enter, or the location described in section 2, is sent from your device to Apple. Apple's privacy policy applies to the data sent.<br>
+    Apple: <a href="https://www.apple.com/legal/privacy/en-ww/">https://www.apple.com/legal/privacy/en-ww/</a></li>
+  <li>Only if you choose to add a Gemini API key in Settings, the App also uses Google's Gemini API (its feature that references Google Maps data) to get ratings, opening hours and similar details. In that case, the same information is also sent to Google.</li>
+  <li>Requests to the Gemini API are sent directly from your device to Google using the API key you obtained and entered yourself. They never pass through the Developer. Google's privacy policy and terms apply to the data sent.<br>
     Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
   <li>Your API key is stored only in your device's Keychain (secure storage) and is never sent to or shared with any third party, including the Developer.</li>
-  <li>Shop information in search results is based on Google Maps data.</li>
+  <li>Shop information in search results is based on Apple Maps data by default, and also on Google Maps data if you add a Gemini API key.</li>
 </ul>
 
 <h2>4. Information stored on your device</h2>
